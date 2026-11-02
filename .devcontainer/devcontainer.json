@@ -1,0 +1,9 @@
+{
+  "name": "Randevu Sistemi — Online",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "forwardPorts": [5173],
+  "portsAttributes": {"5173": {"label": "Randevu Uygulaması", "onAutoForward": "openBrowser"}},
+  "postCreateCommand": "python3 randevu/scripts/setup_online.py",
+  "postStartCommand": "python3 randevu/scripts/start_online.py",
+  "waitFor": "postCreateCommand"
+}
